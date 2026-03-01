@@ -1,16 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.prototipologin.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ececec" height="608.0" stroke="#fcf3f3" strokeType="INSIDE" strokeWidth="0.0" width="932.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="511.0" layoutX="173.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="586.0" />
+      <Text fill="#354eab" layoutX="211.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Website" wrappingWidth="134.6812744140625">
+         <font>
+            <Font name="Segoe UI Black" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#a6a6a6" layoutX="224.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="53.719974517822266">
+         <font>
+            <Font name="Sans Serif Collection" size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="240.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create account">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField layoutX="240.0" layoutY="189.0" prefHeight="29.0" prefWidth="218.0" promptText="Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="240.0" layoutY="224.0" prefHeight="29.0" prefWidth="218.0" promptText="Last name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Text fill="#004aad" layoutX="618.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go back to log in" underline="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="37.0" layoutX="616.0" layoutY="491.0" stroke="#066df4" strokeType="INSIDE" strokeWidth="1.5" width="104.0" />
+      <Text fill="WHITE" layoutX="640.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="240.0" layoutY="261.0" prefHeight="29.0" prefWidth="218.0" promptText="someone@example.com">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="240.0" layoutY="297.0" prefHeight="29.0" prefWidth="41.0" promptText="DD">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="295.0" layoutY="297.0" prefHeight="29.0" prefWidth="41.0" promptText="MM">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="349.0" layoutY="298.0" prefHeight="29.0" prefWidth="41.0" promptText="YY">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Text layoutX="285.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="7.05511474609375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="339.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="7.05511474609375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="240.0" layoutY="376.0" prefHeight="29.0" prefWidth="218.0" promptText="Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="240.0" layoutY="411.0" prefHeight="29.0" prefWidth="218.0" promptText="Confirm password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <CheckBox layoutX="245.0" layoutY="459.0" mnemonicParsing="false" text="Accept" />
+      <Text fill="#004aad" layoutX="307.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms and conditions" underline="true" />
+   </children>
+</Pane>
