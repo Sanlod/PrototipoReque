@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototipologin.verificationController">
     <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ececec" height="608.0" stroke="#fcf3f3" strokeType="INSIDE" strokeWidth="0.0" width="932.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="511.0" layoutX="173.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="586.0" />
@@ -24,37 +20,38 @@
                 <Font name="Sans Serif Collection" size="11.0" />
             </font>
         </Text>
-        <Text layoutX="240.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+        <Text layoutX="240.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update your password">
             <font>
                 <Font name="SansSerif Bold" size="20.0" />
             </font>
         </Text>
-        <TextField layoutX="240.0" layoutY="225.0" prefHeight="29.0" prefWidth="218.0" promptText="Email,Phone,Username...">
+        <TextField layoutX="239.0" layoutY="199.0" prefHeight="29.0" prefWidth="218.0" promptText="Email">
             <font>
                 <Font size="13.0" />
             </font>
         </TextField>
-        <TextField layoutX="240.0" layoutY="265.0" prefHeight="29.0" prefWidth="218.0" promptText="Password">
+        <TextField layoutX="239.0" layoutY="327.0" prefHeight="29.0" prefWidth="218.0" promptText="Verification code">
             <font>
                 <Font size="13.0" />
             </font>
         </TextField>
-        <Text fill="#004aad" layoutX="240.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot my password" underline="true">
+        <Text fill="#004aad" layoutX="602.0" layoutY="541.0" onMouseClicked="#switchHelloAplication" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancell and go back to log in" underline="true">
             <font>
                 <Font name="System Italic" size="12.0" />
             </font>
         </Text>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="37.0" layoutX="616.0" layoutY="495.0" stroke="#066df4" strokeType="INSIDE" strokeWidth="1.5" width="104.0" />
-        <Text fill="WHITE" layoutX="648.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="37.0" layoutX="616.0" layoutY="481.0" onMouseClicked="#switchUpdatePassword" stroke="#066df4" strokeType="INSIDE" strokeWidth="1.5" width="104.0" />
+        <Text fill="WHITE" layoutX="640.0" layoutY="506.0" onMouseClicked="#switchUpdatePassword" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm">
             <font>
                 <Font name="SansSerif Regular" size="15.0" />
             </font>
         </Text>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3f6fa" height="37.0" layoutX="477.0" layoutY="494.0" stroke="#066df4" strokeType="INSIDE" strokeWidth="1.5" width="104.0" />
-        <Text layoutX="501.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
-            <font>
-                <Font name="SansSerif Regular" size="15.0" />
-            </font>
-        </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="37.0" layoutX="240.0" layoutY="252.0" stroke="#066df4" strokeType="INSIDE" strokeWidth="1.5" width="104.0" />
+      <Text fill="WHITE" layoutX="274.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#acacac" layoutX="374.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your e-mail and we will send you a verification code" wrappingWidth="208.02496337890625" />
     </children>
 </Pane>
