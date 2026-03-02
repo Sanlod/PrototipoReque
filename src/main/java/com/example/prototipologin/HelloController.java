@@ -39,4 +39,12 @@ public class HelloController {
         stage.show();
     }
 
+    public void switchLandingSpot(MouseEvent event) throws IOException {
+        Scene escena = SceneCache.getScene("/com/example/prototipologin/LandingSpot.fxml");
+        Stage stage = (Stage) ((Node) event.getSource())
+                .getScene().getWindow();
+        stage.setScene(escena);
+        stage.show();
+    }
+
 }

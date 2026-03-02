@@ -40,7 +40,7 @@
             <Font name="System Italic" size="12.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="37.0" layoutX="616.0" layoutY="495.0" stroke="#066df4" strokeType="INSIDE" strokeWidth="1.5" width="104.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="37.0" layoutX="616.0" layoutY="495.0" onMouseClicked="#switchLandingSpot" stroke="#066df4" strokeType="INSIDE" strokeWidth="1.5" width="104.0" />
       <Text fill="WHITE" layoutX="648.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
          <font>
             <Font name="SansSerif Regular" size="15.0" />
